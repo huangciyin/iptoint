@@ -10,7 +10,7 @@ var IP_REGEX = /^(?:\s+)?(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])(?:\s+)?\.(?:\s+)?(\d{1
  * @param ipAddr: source ip string
  * @returns {number}: 32 bit int
  */
-function ipToInt1(ipAddr) {
+function ipToInt(ipAddr) {
     // iterate the ipAddr, validate and split by dot
     var result = IP_REGEX.exec(ipAddr);
     // got an error, ipAddr is invalid
